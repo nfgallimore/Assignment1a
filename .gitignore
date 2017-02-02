@@ -2,3 +2,4 @@
 # .gitignore ignores object files
 *.o
 *.exe
+.DS_STORE
