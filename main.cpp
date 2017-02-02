@@ -33,6 +33,5 @@ int main(int argc, char** argv)
 
     // prints number of repeats
     std::cout << "\nNumber of repeats: " << repeats << std::endl;
-
 	return 0; // successful execution returns 0
 }

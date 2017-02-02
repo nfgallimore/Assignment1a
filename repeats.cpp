@@ -29,16 +29,15 @@ std::unique_ptr<char[]> deleteRepeats(char* originalArray)
 			}
 		}
 		// if ith element not found in finalArray insert it, increment counter index, else reset to false
-		(!found) ? finalArray[counter] = originalArray[i], counter++ : 1;
+		if (!found)
+		{
+			finalArray[counter] = originalArray[i];
+			counter++;
+		}
 	}
 
-	// cleans remaining original array spots with terminator and adds terminator to finalArray[SIZE+1] to catch case where there are no duplicate characters
-	// for (int i = counter; i < SIZE + 1; i++) 
-	// {
-	// 	finalArray[i] = '\0';
-	// }
-	finalArray[counter] = '\0';
-
 	// returns a unique smart pointer to finalArray
-	return std::unique_ptr<char[]>(finalArray);
+	std::unique_ptr<char[]> p(finalArray);
+	p[counter] = '\0';
+	return std::move(p);
 }
