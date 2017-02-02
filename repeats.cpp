@@ -33,10 +33,11 @@ std::unique_ptr<char[]> deleteRepeats(char* originalArray)
 	}
 
 	// cleans remaining original array spots with terminator and adds terminator to finalArray[SIZE+1] to catch case where there are no duplicate characters
-	for (int i = counter + 1; i < SIZE + 2; i++) 
-	{
-		finalArray[i] = '\0';
-	}
+	// for (int i = counter; i < SIZE + 1; i++) 
+	// {
+	// 	finalArray[i] = '\0';
+	// }
+	finalArray[counter] = '\0';
 
 	// returns a unique smart pointer to finalArray
 	return std::unique_ptr<char[]>(finalArray);
