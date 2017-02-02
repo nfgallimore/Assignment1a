@@ -1,6 +1,6 @@
 /* Nicholas Gallimore */
-/* Contains the function deleteRepeats which removes repeat characters from an array of characters */
-/* repeats.hpp file */
+/* Contains the function deleteRepeats which takes array of chars and returns array of the unique characters */
+/* repeats.cpp file */
 
 #include "repeats.hpp"
 
@@ -8,17 +8,17 @@
 std::unique_ptr<char[]> deleteRepeats(char* originalArray)
 {
 	// dynamically allocated array that will be attached to the returned unique_ptr containing final version of array
-	char* finalArray = new char[SIZE];
+	char* finalArray = new char[SIZE + 1];
 	
-	// tracks current index of finalArray
+	// tracks how many unique characters have been found thus far
 	int counter = 0;
-
-	// true if character is already in finalArray
-	bool found = false; 
 
 	// iterates through array to find an element that we will be checked against all other elements in the array
 	for (int i = 0; i < SIZE; i++)
     {
+		// true if character is already in finalArray
+		bool found = false;
+
     	// checking all other elements to see if our i'th index element is equal to any of them
 		for (int j = 0; j < counter; j++)
         {
@@ -28,8 +28,16 @@ std::unique_ptr<char[]> deleteRepeats(char* originalArray)
 				found = true;
 			}
 		}
-		// if ith element not found in finalArray insert it, increment counter index and reset found to false
-		(!found) ? finalArray[counter] = originalArray[i], counter++ : found = false;
+		// if ith element not found in finalArray insert it, increment counter index, else reset to false
+		(!found) ? finalArray[counter] = originalArray[i], counter++ : 1;
 	}
-	return std::unique_ptr<char[]>(finalArray); // returns a unique smart pointer to finalArray
+
+	// cleans remaining original array spots with terminator and adds terminator to finalArray[SIZE+1] to catch case where there are no duplicate characters
+	for (int i = counter + 1; i < SIZE + 2; i++) 
+	{
+		finalArray[i] = '\0';
+	}
+
+	// returns a unique smart pointer to finalArray
+	return std::unique_ptr<char[]>(finalArray);
 }

@@ -1,13 +1,13 @@
 /* Nicholas Gallimore */
-/* Driver program to test functiont that removes repeat characters from a test array of characters */
+/* Driver program to test function that removes repeat characters from a test array of characters */
 /* main.cpp */
 
-#include "repeats.hpp"
+#include "repeats.cpp"
 
 int main(int argc, char** argv)
 {
 	// init of final array removed of repeat letters
-	std::unique_ptr<char[]> noRepeats(new char[SIZE]); 
+	std::unique_ptr<char[]> noRepeats;
 
 	// test array
 	char originalArray[SIZE];
