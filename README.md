@@ -1,4 +1,4 @@
 # Assignment1a
 
-/* Nicholas Gallimore */
-/* Program to test function that removes repeat characters from a test array of characters */
+Nicholas Gallimore
+Program to remove repeat characters from an array of characters
