@@ -1,0 +1,464 @@
+Nicholas Gallimore <nfg3@zips.uakron.edu>
+Jan 31 (2 days ago)
+
+to Lianghu 
+Hello. I have noticed an extreme pattern of vagueness in your assignment directions and in the in class activities. For example. I did not even understand what you were asking on the last in class activity until the very end, and it was just a simple question about importing. I know the three ways to include things, but I did not know that was what you were asking. Your language is vague and it is hard to understand what it is that you are asking. I am vaguely unfamiliar with C++, however, I have extensive experience in C, Java, Objective-C, OCaml, Python, JavaScript, etc., yet am unfamiliar with the C++ counterparts to what a statement would be translated to from one of the latter languages. I am extremely frustrated and nuanced by reading your assignments because there is so much contradiction in them. This is absurd and completely disappoints my already low expectations from the CS program at Akron. The assignments are explained in a way that makes extremely easy tasks that I am sure everyone would easily understand if re-worded in such a way. Now I know English may not be your first language and I am not blaming you. I am sure you are a good coder and everything, but maybe I could be of some assistance in pointing in a real specific manner the issues that I have encountered while perusing your assignment directions.
+
+In assignment 1 I was confused about the file structure. Coming from a heavy Java background I was unfamiliar with the G++ linker and how it will automatically import the .cpp file if you import the .hpp file. I was unfamiliar with how driver programs are often at times named main.cpp. I was unfamiliar and quite honestly extremely livid and hostile in regard to your statement that we should have 3 files, possibly a 4th. 
+
+First off I did not know what the term "driver program" meant as this was not covered in class.
+
+The unique pointers... COOL! I learned something. That was about it. 
+
+The actual function to delete the repeats was snooze worthy and I did this part in your lecture as you took the whole lecture to simply prove that a struct or object is the same as any other variable (which may be essential to those new to OOP, but not for me).
+
+Sorry if I am coming off as being super critical of you, but it is not simply you. I wish to be critical of the entire Computer Science department at the University of Akron as it is extremely DULL and easier when compared to my previous experiences with CS. I also might suggest more live coding.
+
+Your lectures are good for the material that you are required to teach. (They could be great though if you brought in cake or treats for example)
+
+Yet, the assignments are vague.
+
+For example it says in assignment one "The function should determine if a letter  repeated and, if so, that letter is deleted. . . . Or you can write the non-repeats to the new dynamic array." This second option is vague and according to the first sentence it is a contradiction because the first sentence says the function should delete the letter, yet the alternative option requires no deleting. So must we write something that clears an array that is no longer being used if using the second option or not?
+
+In the driver code you do not specify what noRepeats actually is. I just assumed this to be a unique pointer because how else could it work?
+
+The REALLY frustrating sentence however is "This can be done in the driver program (no additional function) needed." I literally wanted to pull my hair out over this sentence. 
+
+This sentence also: "This code shall be in a .cpp file. You will need the .hpp file too. That means three files all told (including main)." 
+
+What do you mean by told?
+
+And 3 files? Say what??
+3? What are they?
+
+^ That was my initial reaction.
+
+I feel as if I am an investigative reporter trying to figure out what it is that you meant to say. And I did it successfully I would say. However, it was a lot of work, and it could be solved by simply doing a walkthrough on the specifications in the lectures. Or even an email sent out explaining something in more precise detail.
+
+Also, can you please tell me what you mean by my syntax is "invalid" on the first in class activity? It did not specify on the directions which language to use. And the last answer I do not recall it being incomplete as you have said in the grade book on Springboard. Getting a 75% on something that I felt was extremely correct is quite demotivating.
+
+As far as assignment 1 goes, I understand it clearly now. I did not. But now I do. Might I suggest you add a paragraph about the file structure. Such that main.cpp has driver program in it. repeats.cpp has function in it, and repeats.hpp has function header, as well as the option of making a const.hpp file.
+
+Literally if you would have said "Such that main.cpp has driver program in it. repeats.cpp has the deleteRepeats function in it, and repeats.hpp has function prototype, as well as stating the option of making a const.hpp file." I might not be writing you right now. But instead I spent 3 hours of my time at work researching why my program only worked when I did #include of the cpp file containing the deleteRepeats function. That's right. I #include'd a CPP file because I did not have the cpp file containing the deleteRepeats function named the same as the function hpp file. I knew that it was bad practice to import cpp's but I submitted it last night at 11:58 (I finished the jist of this assignment weeks ago) in a way that was incorrect. This incorrectness had been bugging me all day because the program was not working unless I included the cpp file directly (because it was not named the same as the header -- now I know that)
+
+When I first wrote the program. The function deleteRepeats was in the same file as was the main function. It was fully working. But I was super confused about why we had to have 3 files. And I had no clue what they were. I read your statement saying "no additional functions necessary" in the driver program file over and over again in frustration and anger because I had no idea what the 3 files were supposed to be. My program works though, and honestly it is near perfect. My algorithm is alright I guess, could be better I think but as far as everything working correctly goes it should be superb.
+
+Now on to assignment 2. 
+
+"create an array of these structs, called citizen"
+
+WHERE? (Would this be in a file called say... ArrayOfStructs.cpp or taxes.cpp for example?)
+
+"create a function called taxTaker"
+
+WHERE? (I'm assuming you mean in a taxTaker.cpp file, and the prototype in taxTaker.hpp)
+
+"create a funciton called taxTaker that will accept the structure as a parameter" 
+
+When you say structure.. do you mean the array of structs? Because down farther you say "create a function called taxPrint that will accept the structure as a parameter input and print out the total taxes due for all the payer in the array to standard output."
+
+You see I understand D now that I read E. But D depends upon the usage of the word "structure" within E to figure out whether you are talking about an array of taxPayers or a single taxPayer.
+
+E.g., struct = structure
+
+Array of taxPayers = data structure
+
+The vagueness of this is frustrating. I began writing the code for taxTaker and I put that it takes a taxPayer as a parameter. But then I read E and had to go back and change my code because I saw how you used the word structure to talk about as an array.
+
+I would rather have the function signatures and the output of the program rather than the assignment directions as they could be more helpful.
+
+The next confusing part:
+
+You say: 
+
+"The following is your driver program. Follow the naming accordingly:
+
+CODE
+
+"
+
+Yet I am under the assumption that my "driver program" should be the main.cpp file exclusively. main.cpp should have nothing else in it other than what you put on the page 2 of the directions. Yet the directions also say that the constant size of the array should be in a separate hpp file. So should constants be in taxConsts.hpp or in main.cpp?
+
+And honestly. We should be learning more advanced topics that are not programming language specific. I am extremely unhappy with the CS program at Akron if you cannot tell. 
+
+I was expecting to breeze through this course but the most time consuming part is understanding what it is that you want me to do.
+
+I am sick of extremely hard to understand questions/assignments that are essentially asking what is 2+2.
+
+Please re-word in class activity #2 question to "What are three different ways to state that you are using a function within the current scope" or just remove it entirely because there is no easy way to word the question so that the reader knows what it is the question is asking. If it serves as a test of ones knowledge of whether or not they know that they can include functions from a namespace when they use it (having no include using directives) or for when they use it throughout the current scope (whole namespace or just the function) then you should at least maybe reword it to the following:
+
+What are 3 different ways to import a function from a namespace.
+
+But even that is vague because it says import instead of include, and because technically one might not consider it an import when the function is appended to the namespace during the call.
+
+I got a 100% on it BTW. But still the quality of the questions frustrates me.
+
+Might I suggest maybe a function called mystery() that does something and we have to figure out what it does.
+
+Maybe for a programming assignment make it a simple tic tac toe game.
+
+Make a spell checker so we can learn about hash tables and trie data structures and storing data on the harddrive etc.
+
+Make a PHP site with templates
+
+Write a C++ program that writes a C++ program.
+
+Write a C++ program that uses the GET and POST from the HTTP protocol.
+
+Write a C++ program that creates an 
+If tonights in class exercise is as dumb as the last one I might just transfer.
+
+God forbid we learn something about JavaScript.
+
+Sorry this is just a rant. But I mean seriously? I feel as if no one is learning about what software developers would do in the real world.
+
+Hell half of the graduates with a CS degree probably will still have to spend days/hours/weeks setting up a proper IDE and a dependency management tool.
+
+All of this stuff is being neglected to be taught and instead is being replaced with regurgitated dung.
+
+I would really like to make an impact on the Computer Science "culture" at UAkron and completely turn it upside down, make it popular and colorful with games, and FEMALES!
+
+Let me know your thoughts. As I have no idea what part you have in making assignments and picking course material. I know the department chair is the end all be all, but there has to be something that can be done to make this course more interesting.
+
+If I have to buy cake for everyone to get them in the mood to learn how to code. I will.
+
+Once again sorry for my ugly rant and it is with huge regret that I send this email. Even though I am almost 100% sure I will be thinking about why on earth I sent this tonight, I am going to send it anyway. So please do not hate me :)
+
+Cheers,
+
+Nick Gallimore
+
+Tian,Lianghu
+4:04 PM (20 hours ago)
+
+to me 
+Nick:
+First, I am glad you are taking my CSII class. And I am thankful for your comments and suggestions.
+
+I understand your frustration. Assignments are difficult sometimes. Remember I mentioned in the lesson: it is a good thing to have errors during the practice. I also suggest students to "type in" or "hand-write" code even practicing the samples provided in the text book. With so much errors encountered in assignment 1, I see students had significant improvement (felt it through emails in the discussion with students).
+
+Honestly, I have an impression that you are not familiar with c++ after reading the email. CSII class is built on top of CSI and it is based on the assumption that students have grasped the knowledge and skills introduced in CSI. If my impression is correct, I urge you to spend extra time to go over all the contents in chapter 1 to 9 in the text book. This is also why CSI is one of the prerequisite of CSII.
+
+We have three CSII sessions this semester. All the contents (syllabus, materials, assignments, projects etc) used in the class are synchronized. Other teachers and I went through the instructions. We feel there is no problem (at least regarding to the language). I need to admit my English is not as good as other teachers. But I will try my best to communicate more often with students and make sure students understand what I delivered.
+
+I will go over a little bit of assignment 1 in the next lesson. Comparion of different programming style helps a lot in the logic thinking.
+
+I am glad you started assignment 2 so early. Truly, assignment 2 is also designed to stimulate students' creative thinking. That is why you see the requirement but don't see too much of details of how the code should be aligned up. Regarding to the different background that all of you have, I will discuss the situation with other teachers and see what we can do to improve on our side. Wait for further notice.
+
+No worry. I believe when the class goes on, you will overcome obstacles and improve your pragramming skills significantly in terms of c++ programming.
+
+At the end, if you really feel c++ doesn't fit, you may consider a c# programming course that Business School offers (do not remember the course name on top of my head) which may fit better to your current Java-like skill set.
+
+Let's work together and try our best.
+
+Again, thank you so much for your comments and suggestions. As always, I welcome the discussion and please don't take it personal.
+
+Lianghu Tian
+
+
+
+
+
+
+From: Nicholas Gallimore <nfg3@zips.uakron.edu>
+Sent: Tuesday, January 31, 2017 4:43 PM
+To: Tian,Lianghu
+Subject: Vaguness
+
+
+Nicholas Gallimore <nfg3@zips.uakron.edu>
+Attachments8:39 AM (3 hours ago)
+
+to Lianghu 
+Thank you Dr. Lianghu,
+
+I was just misunderstanding how you wanted the program laid out. The first language I learned was C on a linux machine four years ago, not Java. Did you get a chance to look at the code I submitted into the dropbox? I believe it to be quite correct. Also sorry for walking out on your lecture that was extremely rude. In a way however, I wanted the challenge of learning it on my own and I am just frustrated because I do not want to learn the super simple things that I think that I already know. However, sometimes I am wrong about thinking I know something, and I should avoid a narcissistic attitude. 
+
+Here are some more notes on Assignment2b which I have already turned in. The only super unclear part of the directions for assignment 2 is that you want the constant SIZE declared in a separate hpp file, yet you declared SIZE within the main function of your "driver program" in your specs. So should I leave the constant SIZE defined as you wrote it within the main function or should I follow your other statement that it should be declared in a separate file? 100% of my questions as of right now are regarding your specifications.
+
+Also thank you so much, I only wish to make the course better for others. I once again would like to apologize for my rudeness. I knew I would apologize in the future so I am not sure how valuable such an apology is, but you know sometimes you just have to express things.
+
+Sincerely,
+
+Nick Gallimore
+
+2 Attachments 
+ 
+
+Tian,Lianghu
+8:53 AM (3 hours ago)
+
+to me 
+Nick:
+
+No worry. You actually caught something and caused my attention in Assignment2.
+
+I am rewriting the instruction at this moment and discuss the revision with other teachers and hopefully post it before today's lesson.
+
+I own you a pology because the instruction is not clear and cause so much trouble to you. I take the blame. I really appreciate your comments so I got another chance to work on it.
+
+
+The instruction of assignment2 has some flaws. Putting the implementation code (real function body) into hpp file is not a good practice. In large applications, it is pretty easy to cause "duplicate definition" error. This is also contradicting to what I always taught in the class "never put implementation code in hpp file".
+
+
+I haven't got a chance to look at your code yet. TA graded them. Normally I only read them if students have different opinions regarding to their grades.
+
+
+I will take a look at your code and get back to you soon.
+
+
+Thanks again. With the effort all of us put in , we will get the class better and better.
+
+Lianghu
+
+From: Nicholas Gallimore <nfg3@zips.uakron.edu>
+Sent: Thursday, February 2, 2017 8:39:55 AM
+To: Tian,Lianghu
+Subject: Re: Vaguness
+
+
+Nicholas Gallimore <nfg3@zips.uakron.edu>
+8:56 AM (3 hours ago)
+
+to Lianghu 
+Yeah so I did mine the right way by following best practices, and I was like what? Why put a function in the implementation file. Yeah there was a lot of things that seemed a little funky and that is what I was trying to point out.
+
+
+Nicholas Gallimore <nfg3@zips.uakron.edu>
+8:57 AM (3 hours ago)
+
+to Lianghu 
+I meant to say hpp file not implementation file. Sorry!
+
+
+Tian,Lianghu
+9:02 AM (3 hours ago)
+
+to me 
+You did the right thing. I appreciated.
+
+From: Nicholas Gallimore <nfg3@zips.uakron.edu>
+Sent: Thursday, February 2, 2017 8:56:36 AM
+
+
+Tian,Lianghu
+9:14 AM (3 hours ago)
+
+to me 
+For your assignment1, the file arrangement is great and the algorithm is correct. There are some places you can make it better.
+
+(1) in main.cpp, line 10. There is no need to allocate memory. It could just be:
+
+std::unique_ptr<char[]> noRepeats ;
+(2) in repeats.cpp, you algorithm is the same as what I am going to go over in today's lesson. I have some comments below start with //Lianghu
+
+
+
+
+/* Nicholas Gallimore */
+/* Contains the function deleteRepeats which removes repeat characters from an array of characters */
+/* repeats.hpp file */
+
+#include "repeats.hpp"
+
+// takes an array of chars and returns a unique_ptr to a version of the inputed array that contains no duplicate characters
+std::unique_ptr<char[]> deleteRepeats(char* originalArray)
+{
+// dynamically allocated array that will be attached to the returned unique_ptr containing final version of array
+char* finalArray = new char[SIZE];
+// tracks current index of finalArray
+int counter = 0;
+
+// true if character is already in finalArray
+bool found = false; 
+
+
+// iterates through array to find an element that we will be checked against all other elements in the array
+for (int i = 0; i < SIZE; i++)
+    {
+    // checking all other elements to see if our i'th index element is equal to any of them
+for (int j = 0; j < counter; j++)
+        {
+        // if ith element is found in finalArray already
+if (originalArray[i] == finalArray[j])
+{
+found = true;
+}
+}
+// if ith element not found in finalArray insert it, increment counter index and reset found to false
+(!found) ? finalArray[counter] = originalArray[i], counter++ : found = false;
+}
+return std::unique_ptr<char[]>(finalArray); // returns a unique smart pointer to finalArray
+}
+
+From: Nicholas Gallimore <nfg3@zips.uakron.edu>
+Sent: Thursday, February 2, 2017 8:39:55 AM
+To: Tian,Lianghu
+Subject: Re: Vaguness
+
+
+Tian,Lianghu
+9:20 AM (3 hours ago)
+
+to me 
+sorry. accident sent before finished. Retyped.
+
+
+For your assignment1, the file arrangement is great and the algorithm is correct. There are some places you can make it better.
+
+(1) in main.cpp, line 10. There is no need to allocate memory. It could just be:
+std::unique_ptr<char[]> noRepeats ;
+(2) in repeats.cpp, you algorithm is the same as what I am going to go over in today's lesson. But the code has flaws. I have some comments below start with //Lianghu
+
+ 
+/* Nicholas Gallimore */
+/* Contains the function deleteRepeats which removes repeat characters from an array of characters */
+/* repeats.hpp file */
+
+#include "repeats.hpp"
+
+// takes an array of chars and returns a unique_ptr to a version of the inputed array that contains no duplicate characters
+std::unique_ptr<char[]> deleteRepeats(char* originalArray)
+{
+// dynamically allocated array that will be attached to the returned unique_ptr containing final version of array
+char* finalArray = new char[SIZE];
+ 
+// tracks current index of finalArray
+int counter = 0;
+
+// true if character is already in finalArray
+bool found = false; 
+//Lianghu: above line should just beneath "for (int i = 0; i < SIZE; i++){"
+
+// iterates through array to find an element that we will be checked against all other elements in the array
+for (int i = 0; i < SIZE; i++)
+    {
+     //Lianghu: set found = false here
+    // checking all other elements to see if our i'th index element is equal to any of them
+for (int j = 0; j < counter; j++)
+        {
+        // if ith element is found in finalArray already
+if (originalArray[i] == finalArray[j])
+{
+found = true;
+}
+}
+// if ith element not found in finalArray insert it, increment counter index and reset found to false
+(!found) ? finalArray[counter] = originalArray[i], counter++ : found = false; //Lianghu: "found=false" not needed
+}
+return std::unique_ptr<char[]>(finalArray); // returns a unique smart pointer to finalArray
+//Lianghu: I would pass the counter base through a reference variable or add a terminator after unique characters. If you take "add terminator", then change "char* finalArray = new char[SIZE];" to "char* finalArray = new char[SIZE+1];"
+}
+
+
+
+From: Tian,Lianghu
+Sent: Thursday, February 2, 2017 9:14:57 AM
+To: Nicholas Gallimore
+Subject: Re: Vaguness
+
+
+Tian,Lianghu
+9:25 AM (2 hours ago)
+
+to me 
+Assignment2 is perfect. 
+
+You did have strong programming skill set. I am so glad to have you in my class.
+
+Lianghu
+
+From: Nicholas Gallimore <nfg3@zips.uakron.edu>
+Sent: Thursday, February 2, 2017 8:39:55 AM
+To: Tian,Lianghu
+Subject: Re: Vaguness
+
+
+Nicholas Gallimore <nfg3@zips.uakron.edu>
+9:40 AM (2 hours ago)
+
+to Lianghu 
+Ah good catches! See this is what I need to improve my programming skills.
+
+For some reason sometimes after compiling and executing assignment1 it would print abcP instead of abc. I have no clue where the P is coming from in memory and I have only seen it happen once or twice out of maybe 30-40 compiles. Would this be due to how I initialized deleteRepeats?
+
+Definitely good catch on the scope for that boolean. I will look to minify the access of variables like that from now on. And a total blunder on the useless nature of found = false at the end due to not minifying the scope!
+
+One more question about the the file structure. So in objective-c sometimes you see the files in subfolders. Say in assignment2 if I were to make a folder for each pairing cpp and hpp file would that be more suitable in practice or do we just throw everything in the same directory? I could not get the thing to compile even when I manually linked the object files. In the include statements for main.cpp I was experimenting with:
+
+ <include> "taxTaker/taxTaker.hpp"
+ <include> "taxPrint/taxPrinter.hpp"
+
+
+Yet it would return a _main reference error when I ran the makefile. If you do not know, _main is a special function that is executed in C before the main function.
+
+So I did in the makefile:
+
+install:
+    g++ -c taxTaker/taxTaker.cpp
+    g++ -c taxPrint/taxPrint.cpp
+    g++ taxTaker.o taxPrint.o main.cpp
+
+So the object files would be in the same directory as main.cpp but, the sources (.cpp and .hpp) for those object files would be in their subdirectories. 
+
+How would I compile and link the files if I made a subfolder for each? I am under the assumption that in practice it is not correct to throw everything in the same directory.
+
+
+Tian,Lianghu
+10:06 AM (2 hours ago)
+
+to me 
+In c/c++, when memory is allocated, it does not initialize the memory. It takes what ever it exist. This time, you see P, next time you see others or see more than one unexpected characters. That is why I suggest you to pass back the counter or add a terminator right after unique characters. So calling program knows where to stop. 
+
+It is definitely not a good practice to have all files in one directory, neither one pair on directory. You could group related files into certain directories. 
+
+Regarding to your issue of compilation with files under Su folders, I don't have solution. I don't have a system to test. Sorry. 
+I have a suggestion for you though. 
+Clean the folder of object files, then run your makefile, find out where obj files go. I have suspection that the obj files you see are from previous compilation. 
+
+Sent from my iPhone
+
+
+Nicholas Gallimore <nfg3@zips.uakron.edu>
+Attachments11:02 AM (1 hour ago)
+
+to Lianghu 
+I went with the terminator and made your suggested changes:
+
+for (int i = counter + 1; i < SIZE + 2; i++) 
+{
+	finalArray[i] = '\0';
+}
+
+This way it cleans whatever is located in the memory address of the range finalArray[4] to finalArray[11]
+
+Attachments area
+
+Tian,Lianghu
+11:12 AM (1 hour ago)
+
+to me 
+still not right.
+
+"for (int i = counter + 1; i < SIZE + 2; i++) " should be "for (int i = counter; i < SIZE + 1; i++) "
+Should start from counter and end before SIZE+1. If SIZE+2, you end up accessing an element of SIZE+1 which is out of the boundary of the array.
+
+Actually, no need to loop, just do finalArray[counter] = '\0'. Then in the main function, change the result print to (change to while loop):
+// prints the array
+while(noRepeats[repeats] != '\0')
+    {
+    std::cout << noRepeats[i];
+    }
+
+
+From: Nicholas Gallimore <nfg3@zips.uakron.edu>
+Sent: Thursday, February 2, 2017 11:02:44 AM
+
+
+Nicholas Gallimore <nfg3@zips.uakron.edu>
+Attachments12:05 PM (19 minutes ago)
+
+to Lianghu 
+Well, I tried setting counter to '\0' at first and I was still getting the abcP (see attached image). So I figured that the P might be in one of the indicies that is left empty, because no values are assigned to the remaining indicies of finalArray if there are duplicates. Note I also changed the finalArray initializer to SIZE+1 so that it has goes up to finalArray[10] if there are no duplicates for the '/0' character. I was planning on setting finalArray[4] through finalArray[9] to NULL and have finalArray[3] be the '\0' in this case but then I realized that c++ converts NULL to the terminator anyway and it is essentially is the same thing. So although I was essentially shifted one index too far, I still get the P upon fixing the range of the loop. So my solution to the P problem is to NULL the remainder of the array, because for some reason it is being initialized with a P. That is my theory. And like I said it only happens sometimes when executed depending on which block of memory it decides to use would be my best guess. If I initialize something though shouldn't it by default be NULL? What if that address is being used by another program for a login boolean or something? Seems pretty unsafe, and I would think there would be a reservation lock on the chosen memory address. The mysterious P goes away when I clear the remainder of finalArray. Yet I still think like you said finalArray[counter] = '\0' should work, because no other part of my program is setting the value of the remaining indicies of that finalArray. Or even more so the '\0' should be there by default if things are initialized to NULL always and I should not have to add the carriage. By default are values in memory reserved when needed and wiped out to NULL in the stack/heap when they are no longer needed? I am sure this varies among compilers and maybe C++ does not set the values to NULL by default and simply inherits the value of the memory address by default, because its garbage collector generally sets it to null upon dealloc?
+
+https://github.com/nfgallimore/Assignment1a
