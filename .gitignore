@@ -1,3 +1,4 @@
 # Nicholas Gallimore
 # .gitignore ignores object files
 *.o
+*.exe
