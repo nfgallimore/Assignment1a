@@ -3,4 +3,4 @@
 
 install:
 	g++ -c repeats.cpp main.cpp
-	g++ -o repeats.exe main.o
+	g++ -o repeats main.o
